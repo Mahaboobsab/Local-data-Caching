@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        var data = Data()
+        
+        if false == UserDefaults.standard.bool(forKey: "isfirstTimeLaunch") {
+                        UserDefaults.standard.set(true, forKey: "isfirstTimeLaunch")
+                        UserDefaults.standard.synchronize()
+                        UserDefaults.standard.setValue(data, forKey: "personsList")
+                        UserDefaults.standard.synchronize()
+        }
+            
         return true
     }
 

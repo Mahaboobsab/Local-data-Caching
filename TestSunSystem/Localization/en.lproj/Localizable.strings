@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TestSunSystem
+
+  Created by Nadaf on 28/01/19.
+  Copyright © 2019 Nadaf. All rights reserved.
+*/
+"OK_Title" = "OK";
+"Cancel_Title" = "Cancel";
+"Loading" = "Please wait...";
+"Error_Title" = "Error";
